@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#141c2e" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" />
+
+  <!-- Grid lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="50" y1="0" x2="50" y2="675" />
+    <line x1="200" y1="0" x2="200" y2="675" />
+    <line x1="350" y1="0" x2="350" y2="675" />
+    <line x1="500" y1="0" x2="500" y2="675" />
+    <line x1="650" y1="0" x2="650" y2="675" />
+    <line x1="800" y1="0" x2="800" y2="675" />
+    <line x1="950" y1="0" x2="950" y2="675" />
+    <line x1="1100" y1="0" x2="1100" y2="675" />
+    <line x1="0" y1="100" x2="1200" y2="100" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="0" y1="500" x2="1200" y2="500" />
+    <line x1="0" y1="600" x2="1200" y2="600" />
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="50" y="40" width="1100" height="80" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+  <rect x="70" y="55" width="50" height="50" rx="8" fill="#0284c7" />
+  <text x="95" y="87" font-family="system-ui, sans-serif" font-weight="900" font-size="18" fill="#fff" text-anchor="middle">IO-S</text>
+  <text x="140" y="75" font-family="system-ui, sans-serif" font-weight="800" font-size="26" fill="#f8fafc">IoLinkSafetyForge Pro</text>
+  <text x="140" y="100" font-family="system-ui, sans-serif" font-weight="500" font-size="14" fill="#94a3b8">IEC 61131-9 / IEC 61784-3 IO-Link Safety Protocol Studio &amp; SIL 3 Auditor</text>
+  <rect x="990" y="65" width="130" height="30" rx="6" fill="#10b981" opacity="0.2" />
+  <text x="1055" y="85" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#34d399" text-anchor="middle">SIL 3 / PL e (Cat 4)</text>
+
+  <!-- Left Card: M-Sequence PDU Layout -->
+  <rect x="50" y="145" width="530" height="480" rx="10" fill="#151e33" stroke="#334155" stroke-width="1" />
+  <rect x="50" y="145" width="530" height="45" rx="10" fill="#1e293b" />
+  <text x="75" y="174" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#f8fafc">M-Sequence Safety PDU Frame Layout</text>
+  
+  <text x="75" y="220" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Safety Device ID (SDID): <tspan fill="#38bdf8" font-weight="700">0x1234</tspan>  |  Port: <tspan fill="#facc15" font-weight="700">COM3 (230.4 kbps)</tspan></text>
+  <text x="75" y="245" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Cable Topology: <tspan fill="#34d399" font-weight="800">Point-to-Point (Max 20.0 m)</tspan> via 3-wire M12</text>
+
+  <!-- PDU Byte Graphic -->
+  <g transform="translate(75, 275)">
+    <!-- Byte 0 -->
+    <rect x="0" y="0" width="85" height="65" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="42" y="22" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Data 0</text>
+    <text x="42" y="47" font-family="monospace" font-weight="700" font-size="18" fill="#38bdf8" text-anchor="middle">0xAA</text>
+    <text x="42" y="77" font-family="monospace" font-size="9" fill="#64748b" text-anchor="middle">10101010b</text>
+
+    <!-- Byte 1 -->
+    <rect x="95" y="0" width="85" height="65" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="137" y="22" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Data 1</text>
+    <text x="137" y="47" font-family="monospace" font-weight="700" font-size="18" fill="#38bdf8" text-anchor="middle">0x55</text>
+    <text x="137" y="77" font-family="monospace" font-size="9" fill="#64748b" text-anchor="middle">01010101b</text>
+
+    <!-- Byte 2 (Control) -->
+    <rect x="190" y="0" width="95" height="65" rx="6" fill="#0f172a" stroke="#facc15" stroke-width="1.5" />
+    <text x="237" y="22" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">SCs / SSt</text>
+    <text x="237" y="47" font-family="monospace" font-weight="700" font-size="18" fill="#facc15" text-anchor="middle">0x80</text>
+    <text x="237" y="77" font-family="monospace" font-size="9" fill="#64748b" text-anchor="middle">Run(1)+RC(0)</text>
+
+    <!-- Byte 3 (CRC High) -->
+    <rect x="295" y="0" width="85" height="65" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1.5" />
+    <text x="337" y="22" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">CRC High</text>
+    <text x="337" y="47" font-family="monospace" font-weight="700" font-size="18" fill="#34d399" text-anchor="middle">0x73</text>
+    <text x="337" y="77" font-family="monospace" font-size="9" fill="#64748b" text-anchor="middle">01110011b</text>
+
+    <!-- Byte 4 (CRC Low) -->
+    <rect x="390" y="0" width="85" height="65" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1.5" />
+    <text x="432" y="22" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">CRC Low</text>
+    <text x="432" y="47" font-family="monospace" font-weight="700" font-size="18" fill="#34d399" text-anchor="middle">0xDA</text>
+    <text x="432" y="77" font-family="monospace" font-size="9" fill="#64748b" text-anchor="middle">11011010b</text>
+  </g>
+
+  <!-- SDID & Polynomial Callout -->
+  <rect x="75" y="385" width="480" height="95" rx="6" fill="#0f172a" stroke="#1e293b" />
+  <text x="95" y="415" font-family="monospace" font-weight="700" font-size="13" fill="#34d399">CRC-16: 0x73DA (Polynomial 0x1021 CCITT)</text>
+  <text x="95" y="438" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Virtual Seed Protection: Bound to SDID (0x1234) without wire overhead.</text>
+  <text x="95" y="462" font-family="system-ui, sans-serif" font-size="12" fill="#38bdf8">Hamming Distance d ≥ 4 | Residual Error Probability &lt; 10⁻⁹ h⁻¹ (SIL 3).</text>
+
+  <!-- Right Card: Timing & ISO 13855 Optical Clearance -->
+  <rect x="620" y="145" width="530" height="480" rx="10" fill="#151e33" stroke="#334155" stroke-width="1" />
+  <rect x="620" y="145" width="530" height="45" rx="10" fill="#1e293b" />
+  <text x="645" y="174" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#f8fafc">Watchdog Timing &amp; ISO 13855 Clearance Sizer</text>
+
+  <g transform="translate(645, 215)">
+    <rect x="0" y="0" width="230" height="80" rx="8" fill="#0f172a" stroke="#1e293b" />
+    <text x="20" y="28" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Master Cycle Time (COM3)</text>
+    <text x="20" y="58" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#38bdf8">2.0 ms</text>
+
+    <rect x="250" y="0" width="230" height="80" rx="8" fill="#0f172a" stroke="#1e293b" />
+    <text x="270" y="28" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Safety Watchdog Time (3.5x)</text>
+    <text x="270" y="58" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#facc15">7.0 ms</text>
+  </g>
+
+  <g transform="translate(645, 315)">
+    <rect x="0" y="0" width="230" height="80" rx="8" fill="#0f172a" stroke="#1e293b" />
+    <text x="20" y="28" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Total Worst-Case Reaction (T_wcrt)</text>
+    <text x="20" y="58" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#f87171">39.0 ms</text>
+
+    <rect x="250" y="0" width="230" height="80" rx="8" fill="#0f172a" stroke="#1e293b" />
+    <text x="270" y="28" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">ISO 13855 Optical Distance (S)</text>
+    <text x="270" y="58" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#34d399">191 mm</text>
+  </g>
+
+  <!-- Formula breakdown -->
+  <rect x="645" y="415" width="480" height="80" rx="6" fill="#0f172a" stroke="#1e293b" />
+  <text x="665" y="445" font-family="monospace" font-size="12" fill="#94a3b8">S = (K × T_wcrt) + C = (1600 mm/s × 0.039 s) + 128 mm</text>
+  <text x="665" y="470" font-family="monospace" font-size="12" fill="#38bdf8">T_wcrt = T_in(3ms) + 2×Cycle(4ms) + T_master(5ms) + WDT(7ms) + T_act(20ms)</text>
+
+  <!-- 10-Point Auditor Status Pill -->
+  <rect x="645" y="515" width="480" height="85" rx="8" fill="#064e3b" stroke="#059669" stroke-width="1.5" />
+  <text x="670" y="545" font-family="system-ui, sans-serif" font-weight="800" font-size="16" fill="#34d399">✓ 10-POINT SIL 3 AUDIT: ALL CHECKS PASSED</text>
+  <text x="670" y="575" font-family="system-ui, sans-serif" font-size="13" fill="#a7f3d0">Cable ≤ 20m • SDID Binding • CRC-16 0x1021 • WDT ≥ 3.0x • Monitored Reset</text>
+</svg>
